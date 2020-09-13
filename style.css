@@ -27,6 +27,15 @@ h2 {
   font-weight: 900;
 }
 
+h3 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(155, 155, 155);
+}
+
 .container {
   display: grid;
   width: 80%;
@@ -47,7 +56,6 @@ h2 {
   background-color: var(--primary-color);
 }
 
-
 .container-form .form-remit {
   display: flex;
   height: 580px;
@@ -56,10 +64,36 @@ h2 {
   justify-content: center;
 }
 
-.form-remit h3 {
-  font-weight: 500;
+.container-form .form-remit .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 0px 40px 0px; 
 }
 
-.form-remit p {
+
+.form-remit .form-control {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 420px;
+  height: 44px;
+  margin: 10px 0;
+  font-size: 13px;
+  color: rgb(136, 136, 136);
+}
+
+.form-remit .form-control input{
+  outline: none;
+  border: 0;
+}
+
+.form-remit .form-control  label {
+  margin:0 0 0 10px;
+}
+.form-control input[type="email"],
+.form-control input[type="password"]{
+  padding: 3px 0 0 10px;
 
 }
