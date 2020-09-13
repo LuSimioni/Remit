@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Remit</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="container-form"></div>
-      <div class="container-img"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Remit</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-form">
+      <h2 class="remit">Remit</h2>
+      <form class="form-remit">
+        <h3 class="welcome">Welcome!</h3>
+        <p class="singin">Sign in by entering the information below</p>
+
+        <div class="form-control">
+
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="form-control">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-control">
+          <input type="checkbox" id="checkbox" name="checkbox" checked>
+          <label for="checkbox">Remember Me</label>
+        </div>
+        <a href="#" class="forgotten">Forgotten Password
+        </a>
+
+        <input type="submit" id="submit" value="Continue">
+
+        <a href="#" class="create">Don't gave an account?Create one here.</a>
+      </form>
+
     </div>
-  </body>
+    <div class="container-img"></div>
+  </div>
+</body>
+
 </html>
